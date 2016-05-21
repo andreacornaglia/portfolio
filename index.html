@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrea's Portfolio</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- My Css -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--Awesome font -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Josefin+Slab:300,400' rel='stylesheet' type='text/css'>
+    <script>
+    var menuIsOpen = false;
+    
+    function toggleMenu() {
+    var menu = $('#navpannel');
+    var main = $('#main');
+    menuIsOpen = !menuIsOpen;
+    $("html").css("overflow", menuIsOpen ? "hidden":"visible");
+
+  $('#navpannel').animate({
+    right: menuIsOpen ? '+=300' : '-=300'
+  }, 1000);
+  $('#main').animate({
+    left: menuIsOpen ? '-=300' : '+=300'
+  }, 1000);
+}  
+    </script>
+  </head>
+  <body>
+    <div id="navpannel">
+            <li id="closemenu" onclick="toggleMenu()"><i class="fa fa-times fa-lg"></i></li>
+            <ul id="closemenuul">
+            <li><a class="white" id="link-hello" href="#about" onclick="toggleMenu()">Hello</a></li>
+            <li><a class="white" id="link-work" href="#nomads" onclick="toggleMenu()">My Projects</a></li>
+            <li><a class="white" id="link-resume" href="#resume" onclick="toggleMenu()">Resume</a></li>
+            <li><a class="white" id="link-contact" href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+            </ul>
+        </div>
+        <div id="main">
+    		<nav id="menu">
+				<div id="nav-menu">
+					<ul id="main-nav">
+                        <li class="float-right" onclick="toggleMenu()"><i class="fa fa-bars fa-lg"></i></li>
+					</ul>
+				</div>
+			</nav>
+          <div id="page">
+    		<section id="hello">
+            </section>
+            <section id="work">
+                <div class="section_text">
+                    <h1 class="section_title">Nomads</h1>
+                    <h2 class="section_subtitle">A travel diary app</h1>
+                    <ul class="section_list">
+                        <li class="section_li">
+                            UX Development
+                        </li>
+                        <li class="section_li">
+                            Concept &amp; Design
+                        </li>
+                        <li class="section_li">
+                            Thesis Project
+                        </li>
+                    </ul>
+                    <a class="section_a" href="work.html"><button class="btn btn-default">Go to Project</button></a>
+                </div>
+            </section>
+            <section id="mybooks">
+                <div class="section_text">
+                    <h1 class="section_title">My books</h1>
+                    <h2 class="section_subtitle">An interactive infographic</h1>
+                    <ul class="section_list">
+                        <li class="section_li">
+                            Data Visualization
+                        </li>
+                        <li class="section_li">
+                            D3.JS &amp; Javascript
+                        </li>
+                        <li class="section_li">
+                            Visual Development
+                        </li>
+                    </ul>
+                    <a class="section_a" href="mybooks.html"><button class="btn btn-default">Go to Project</button></a>
+                </div>
+            </section>
+            <section id="momaapp">
+                <div class="section_text">
+                    <h1 class="section_title">Moma Audioguide</h1>
+                    <h2 class="section_subtitle">A JQuery Mobile App</h1>
+                    <ul class="section_list">
+                        <li class="section_li">
+                            JQuery Mobile
+                        </li>
+                        <li class="section_li">
+                            JSON &amp; Javascript
+                        </li>
+                        <li class="section_li">
+                            HTML5 audio
+                        </li>
+                    </ul>
+                    <a class="section_a" href="moma.html"><button class="btn btn-default">Go to Project</button></a>
+                </div>
+            </section>
+            <section id="bikemark">
+                <div class="section_text">
+                    <h1 class="section_title">BikeMark App</h1>
+                    <h2 class="section_subtitle">A bike app prototype.</h1>
+                    <ul class="section_list">
+                        <li class="section_li">
+                            Animations on Mobile
+                        </li>
+                        <li class="section_li">
+                            Framer.JS
+                        </li>
+                        <li class="section_li">
+                            UX Development
+                        </li>
+                    </ul>
+                   <a class="section_a" href="bike.html"><button class="btn btn-default">Go to Project</button></a>
+                </div>
+            </section>
+               <section id="resume">
+                   <div class="col-md-8">
+                    <h2 class="resume_title">Resume</h1>
+                   <a href="media/Andrea_Cornaglia_resume.pdf"><img class="medium img-responsive" src="media/resume_img.png"/></a>
+                   </div>
+               </section>
+              <section id="contact">
+                  <div class="hero_text">
+                      <a id="email" href="mailto:andreacornaglia@gmail.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                  </div>
+              </section>
+        <footer>
+        	<p id="copy">&copy; 2014 Andrea Cornaglia. Thanks for stopping by!</p>
+        </footer>
+          </div>
+            
+       </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
