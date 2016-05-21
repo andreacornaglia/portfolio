@@ -432,10 +432,7 @@ p.caption_work{
 /*Sections Backgrounds*/
 
 #hello {
-	background-color: #fff;
-    background-image: url('../media/hello.svg'), none;
-    background-repeat: no-repeat;
-    background-position:center;
+padding: 0;
 }
 
 #work{
