@@ -47,6 +47,34 @@ nav#menu{
 	height:3em;
 }
 
+#introText{
+    position: absolute;
+    top:40%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.mainFooter{
+    position: absolute;
+    bottom:0;
+    z-index: 9999;
+	width:100%;
+	height:3em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.mainFooter ul{
+    padding: 0;
+    margin: 0;
+}
+
+.mainFooter ul a{
+color:rgb(255,255,255) !important;
+}
+
 #main-nav{
 	padding: 1em 0 2em 0;
 	margin: 0 0 2em 8em;
@@ -236,9 +264,6 @@ hr{
 	width: 100%;
 }
 
-#contact{
-	background-color: #303030;
-}
 
 .me{
 	float: left;
@@ -259,16 +284,20 @@ p.contact{
 }
 
 footer{
-	height: 4em;
-	background-color: #c0c0c0;
+    width: 100%;
 	
 }
 
 #copy{
-	margin:0 0 0 0;
-	padding:2% 0 0 2%;
-	font-size: 1.3em;
-	font-weight:300;
+    margin: 0 0 0 10px;
+    padding: 15px 0 0 0;
+    font-size: 1.1em;
+    font-weight: 300;
+    width: 400px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 1px solid rgb(187,98,242);
 }
 
 .resume_date{
@@ -412,6 +441,14 @@ p.caption_work{
     font-size:30px;
 }
 
+.row{
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
 .hero_small{
     font-size:14px;
 }
@@ -460,17 +497,12 @@ padding: 0;
     background-position: right bottom;
 }
 
-#contact{
-    background-color: #f2f2f2;
-    background-image: url('../media/contact.svg'), none;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 #resume{
+    padding: 0 !important;
+    margin: 0 !important;
     background-repeat: no-repeat;
-    background-position: right;
-    width:80%;
+    background-position: left;
     margin-right: auto;
     margin-left: auto;
 }
@@ -520,11 +552,21 @@ padding-bottom: 20px;
 }
 
 .page_padding{
-    margin-top:20px;
-    width:80%;
     margin-right: auto;
     margin-left: auto;
     overflow:hidden;
+    width: 100%;
+    height: 300px;
+}
+
+#nomads_icon{
+	/*position:relative;*/
+	padding:3.25em 1.25em 4.375em;
+    background: url('../media/logo-18.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .persona{
